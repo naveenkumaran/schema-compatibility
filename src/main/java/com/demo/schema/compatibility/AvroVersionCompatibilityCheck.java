@@ -20,7 +20,7 @@ public class AvroVersionCompatibilityCheck {
                 .build();
 
         final DataFileWriter<Payment> paymentDataFileWriter= new DataFileWriter<>(new SpecificDatumWriter<>(Payment.class));
-        paymentDataFileWriter.create(payment.getSchema(), new File("customerV0.avro"));
+        paymentDataFileWriter.create(payment.getSchema(), new File("payment_V0.avro"));
         paymentDataFileWriter.append(payment);
         paymentDataFileWriter.close();
     }
