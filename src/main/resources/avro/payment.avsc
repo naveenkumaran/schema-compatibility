@@ -1,0 +1,9 @@
+{
+     "type": "record",
+     "namespace": "com.demo.schema.compatibility",
+     "name": "Payment",
+     "fields": [
+       { "name": "id", "type": "string", "doc": "Transaction identifier" },
+       { "name": "amount", "type": "double", "doc": "currency" }
+     ]
+}
